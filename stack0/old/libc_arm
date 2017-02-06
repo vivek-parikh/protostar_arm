@@ -1,0 +1,116 @@
+Gadgets information
+============================================================
+0x0005a7cc : add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5a3dc ; bx lr
+0x0005e70c : add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5e15c ; bx lr
+0x0005a66c : add ip, ip, #0x48 ; tst r8, #0x3f ; bne #0x5a538 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a38c : add r0, r1, pc ; bx lr
+0x0005a37c : andeq r0, r0, r0 ; ldr r1, [pc, #0x10] ; tst r0, #0x1000 ; ldrne r1, [pc, #4] ; add r0, r1, pc ; bx lr
+0x00038514 : andle r0, sl, r0, lsl #30 ; strhlo pc, [lr], -fp ; b #0x1289e18
+0x0005a36c : andle r4, r2, r1, lsl #22
+0x0005e110 : ands r2, r2, #0x3f ; pop {r8} ; bne #0x5dc58 ; bx lr
+0x0005a7d0 : ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5a3d8 ; bx lr
+0x0005e710 : ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5e158 ; bx lr
+0x0003851c : b #0x1289e10
+0x0005a50c : bge #0x5a4d8 ; tst r8, #0x3f ; bne #0x5a530 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a024 : bhs #0x5a008 ; bx lr
+0x000911f8 : blmi #0x2cf9c4 ; ldrbtmi r4, [fp], #-0x910 ; stmdavs r8!, {r0, r1, r3, r4, fp, sp, lr}
+0x0005a7d8 : bne #0x5a3d0 ; bx lr
+0x0005a514 : bne #0x5a528 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a674 : bne #0x5a530 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005e118 : bne #0x5dc50 ; bx lr
+0x0005e718 : bne #0x5e150 ; bx lr
+0x0005e104 : bpl #0x5e104 ; vst1.8 {d0, d1, d2, d3}, [ip:0x40]! ; vst1.8 {d4, d5, d6, d7}, [ip:0x40]! ; ands r2, r2, #0x3f ; pop {r8} ; bne #0x5dc64 ; bx lr
+0x0005a028 : bx lr
+0x00038528 : ldm sp!, {pc}
+0x0005a380 : ldr r1, [pc, #0x10] ; tst r0, #0x1000 ; ldrne r1, [pc, #4] ; add r0, r1, pc ; bx lr
+0x0005a450 : ldr r3, [r1, #-4] ; str r3, [ip, #-4] ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a448 : ldr r3, [r1, #-8] ; str r3, [ip, #-8] ; ldr r3, [r1, #-4] ; str r3, [ip, #-4] ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a7d4 : ldr r8, [sp], #0x20 ; bne #0x5a3d4 ; bx lr
+0x0005e714 : ldr r8, [sp], #0x20 ; bne #0x5e154 ; bx lr
+0x0005a518 : ldr r8, [sp], #0x20 ; bx lr
+0x00059d4c : ldrbhs ip, [r1, #-1] ; strbne r3, [r0, #-1]! ; strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x00059d48 : ldrbhs r4, [r1, #-1]! ; ldrbhs ip, [r1, #-1] ; strbne r3, [r0, #-1]! ; strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005a378 : ldrbmi r4, [r0, -r4, lsl #22]! ; andeq r0, r0, r0 ; ldr r1, [pc, #0x10] ; tst r0, #0x1000 ; ldrne r1, [pc, #4] ; add r0, r1, pc ; bx lr
+0x0005a460 : ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x00059d44 : ldrbne r3, [r1, #-1]! ; ldrbhs r4, [r1, #-1]! ; ldrbhs ip, [r1, #-1] ; strbne r3, [r0, #-1]! ; strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005a588 : ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddc0 : ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; pop {r8} ; bx lr
+0x000911f0 : ldrbtmi r2, [r8], #-0x202
+0x000911fc : ldrbtmi r4, [fp], #-0x910 ; stmdavs r8!, {r0, r1, r3, r4, fp, sp, lr}
+0x0005a4f8 : ldrd r2, r3, [r1, #0x38] ; strd r2, r3, [ip, #0x38] ; ldrd r2, r3, [r1, #0x40]! ; strd r2, r3, [ip, #0x40]! ; subs r8, r8, #0x40 ; bge #0x5a4ec ; tst r8, #0x3f ; bne #0x5a544 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a500 : ldrd r2, r3, [r1, #0x40]! ; strd r2, r3, [ip, #0x40]! ; subs r8, r8, #0x40 ; bge #0x5a4e4 ; tst r8, #0x3f ; bne #0x5a53c ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a7b8 : ldrd r4, r5, [sp, #8] ; strd r6, r7, [ip, #0x38] ; ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5a3f0 ; bx lr
+0x0005e6f8 : ldrd r4, r5, [sp, #8] ; strd r6, r7, [ip, #0x38] ; ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5e170 ; bx lr
+0x0005a658 : ldrd r4, r5, [sp, #8] ; strd r6, r7, [ip, #0x38] ; ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; tst r8, #0x3f ; bne #0x5a54c ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a7c0 : ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5a3e8 ; bx lr
+0x0005e700 : ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5e168 ; bx lr
+0x0005a660 : ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; tst r8, #0x3f ; bne #0x5a544 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a7c8 : ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5a3e0 ; bx lr
+0x0005e708 : ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5e160 ; bx lr
+0x0005a668 : ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; tst r8, #0x3f ; bne #0x5a53c ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a45c : ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a584 : ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddbc : ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; pop {r8} ; bx lr
+0x0005a388 : ldrne r1, [pc, #4] ; add r0, r1, pc ; bx lr
+0x0005dc94 : ldrne r3, [r1], #4 ; strne r3, [ip], #4 ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a578 : ldrne r3, [r1], #4 ; strne r3, [ip], #4 ; lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddb0 : ldrne r3, [r1], #4 ; strne r3, [ip], #4 ; lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; pop {r8} ; bx lr
+0x00059d40 : lsls r2, r2, #0x1f ; ldrbne r3, [r1, #-1]! ; ldrbhs r4, [r1, #-1]! ; ldrbhs ip, [r1, #-1] ; strbne r3, [r0, #-1]! ; strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005a458 : lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a580 : lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddb8 : lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; pop {r8} ; bx lr
+0x00091208 : pop {r0, r1, pc}
+0x00059d5c : pop {r0, r4, pc}
+0x00059d3c : pop {r5, r6, r7, r8} ; lsls r2, r2, #0x1f ; ldrbne r3, [r1, #-1]! ; ldrbhs r4, [r1, #-1]! ; ldrbhs ip, [r1, #-1] ; strbne r3, [r0, #-1]! ; strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005e114 : pop {r8} ; bne #0x5dc54 ; bx lr
+0x0005ddcc : pop {r8} ; bx lr
+0x00091200 : stmdavs r8!, {r0, r1, r3, r4, fp, sp, lr}
+0x000911e4 : stmdavs r8!, {r1, r3, r6, sb, sl, lr}
+0x00059d38 : str lr, [r0, #-4]! ; pop {r5, r6, r7, r8} ; lsls r2, r2, #0x1f ; ldrbne r3, [r1, #-1]! ; ldrbhs r4, [r1, #-1]! ; ldrbhs ip, [r1, #-1] ; strbne r3, [r0, #-1]! ; strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005a454 : str r3, [ip, #-4] ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a44c : str r3, [ip, #-8] ; ldr r3, [r1, #-4] ; str r3, [ip, #-4] ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x00059d58 : strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005a020 : strbhs r1, [r3], #1 ; bhs #0x5a00c ; bx lr
+0x0005a018 : strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; bhs #0x5a014 ; bx lr
+0x0005a010 : strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; bhs #0x5a01c ; bx lr
+0x0005a008 : strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; bhs #0x5a024 ; bx lr
+0x00059d54 : strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005a468 : strbne r1, [ip] ; bx lr
+0x00059d50 : strbne r3, [r0, #-1]! ; strbhs r4, [r0, #-1]! ; strbhs ip, [r0, #-1] ; pop {r0, r4, pc}
+0x0005a590 : strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddc8 : strbne r8, [ip] ; pop {r8} ; bx lr
+0x0005a4fc : strd r2, r3, [ip, #0x38] ; ldrd r2, r3, [r1, #0x40]! ; strd r2, r3, [ip, #0x40]! ; subs r8, r8, #0x40 ; bge #0x5a4e8 ; tst r8, #0x3f ; bne #0x5a540 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a504 : strd r2, r3, [ip, #0x40]! ; subs r8, r8, #0x40 ; bge #0x5a4e0 ; tst r8, #0x3f ; bne #0x5a538 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a7bc : strd r6, r7, [ip, #0x38] ; ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5a3ec ; bx lr
+0x0005e6fc : strd r6, r7, [ip, #0x38] ; ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5e16c ; bx lr
+0x0005a65c : strd r6, r7, [ip, #0x38] ; ldrd r6, r7, [sp, #0x10] ; strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; tst r8, #0x3f ; bne #0x5a548 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a7c4 : strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5a3e4 ; bx lr
+0x0005e704 : strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; ands r2, r8, #0x3f ; ldr r8, [sp], #0x20 ; bne #0x5e164 ; bx lr
+0x0005a664 : strd sl, fp, [ip, #0x40] ; ldrd sl, fp, [sp, #0x18] ; add ip, ip, #0x48 ; tst r8, #0x3f ; bne #0x5a540 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a464 : strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a58c : strhhs r3, [ip], #2 ; strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddc4 : strhhs r3, [ip], #2 ; strbne r8, [ip] ; pop {r8} ; bx lr
+0x00038518 : strhlo pc, [lr], -fp ; b #0x1289e14
+0x0005dc98 : strne r3, [ip], #4 ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a57c : strne r3, [ip], #4 ; lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddb4 : strne r3, [ip], #4 ; lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; pop {r8} ; bx lr
+0x0005e100 : subs r2, r2, #0x40 ; bpl #0x5e108 ; vst1.8 {d0, d1, d2, d3}, [ip:0x40]! ; vst1.8 {d4, d5, d6, d7}, [ip:0x40]! ; ands r2, r2, #0x3f ; pop {r8} ; bne #0x5dc68 ; bx lr
+0x0005a004 : subs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; bhs #0x5a028 ; bx lr
+0x0005a508 : subs r8, r8, #0x40 ; bge #0x5a4dc ; tst r8, #0x3f ; bne #0x5a534 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a01c : subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; bhs #0x5a010 ; bx lr
+0x0005a014 : subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; bhs #0x5a018 ; bx lr
+0x0005a00c : subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; subshs r2, r2, #1 ; strbhs r1, [r3], #1 ; bhs #0x5a020 ; bx lr
+0x0003850c : svchs #0x683f
+0x0005a384 : tst r0, #0x1000 ; ldrne r1, [pc, #4] ; add r0, r1, pc ; bx lr
+0x0005dc90 : tst r2, #4 ; ldrne r3, [r1], #4 ; strne r3, [ip], #4 ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005a510 : tst r8, #0x3f ; bne #0x5a52c ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a670 : tst r8, #0x3f ; bne #0x5a534 ; ldr r8, [sp], #0x20 ; bx lr
+0x0005a574 : tst r8, #4 ; ldrne r3, [r1], #4 ; strne r3, [ip], #4 ; lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; ldr r8, [sp], #0x20 ; bx lr
+0x0005ddac : tst r8, #4 ; ldrne r3, [r1], #4 ; strne r3, [ip], #4 ; lsls r8, r8, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r8, [r1] ; strhhs r3, [ip], #2 ; strbne r8, [ip] ; pop {r8} ; bx lr
+0x0005e0fc : vld1.8 {d4, d5, d6, d7}, [r1]! ; subs r2, r2, #0x40 ; bpl #0x5e10c ; vst1.8 {d0, d1, d2, d3}, [ip:0x40]! ; vst1.8 {d4, d5, d6, d7}, [ip:0x40]! ; ands r2, r2, #0x3f ; pop {r8} ; bne #0x5dc6c ; bx lr
+0x0005e108 : vst1.8 {d0, d1, d2, d3}, [ip:0x40]! ; vst1.8 {d4, d5, d6, d7}, [ip:0x40]! ; ands r2, r2, #0x3f ; pop {r8} ; bne #0x5dc60 ; bx lr
+0x0005dc8c : vst1.8 {d0}, [ip]! ; tst r2, #4 ; ldrne r3, [r1], #4 ; strne r3, [ip], #4 ; lsls r2, r2, #0x1f ; ldrhhs r3, [r1], #2 ; ldrbne r1, [r1] ; strhhs r3, [ip], #2 ; strbne r1, [ip] ; bx lr
+0x0005e10c : vst1.8 {d4, d5, d6, d7}, [ip:0x40]! ; ands r2, r2, #0x3f ; pop {r8} ; bne #0x5dc5c ; bx lr
+0x0005e0f8 : vst1.8 {d4, d5, d6, d7}, [ip:0x40]! ; vld1.8 {d4, d5, d6, d7}, [r1]! ; subs r2, r2, #0x40 ; bpl #0x5e110 ; vst1.8 {d0, d1, d2, d3}, [ip:0x40]! ; vst1.8 {d4, d5, d6, d7}, [ip:0x40]! ; ands r2, r2, #0x3f ; pop {r8} ; bne #0x5dc70 ; bx lr
+
+Unique gadgets found: 112
